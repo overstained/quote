@@ -3,8 +3,7 @@
     <p>quote [file_name/path] [borrowed_amount] [additional_arguments]</p>
     <p>Ex:   quote market.csv 1000<br>quote --help<br>quote market.csv 1000 --delimiter;</p>
 <h3>Assumptions made</h3> 
-  <p>The program takes a csv file containing columns (Lender, Rate, Available) amongs other possible columns and the order of these
-columns dones't matter.</p>
+  <p>The program takes a csv file containing required columns (Lender, Rate, Available) amongst other possible columns.The order of the columns doesn't matter.</p>
   <p>If the provided file is too large to be read into memory, the program will probably fail with an outofmemoryexception, depending
 on the jvm parameters.</p>
   <p>If the CSV file is not available at path given(can be relative or absolute), is not accessible or is not a valid CSV file, the program
